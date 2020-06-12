@@ -1,0 +1,83 @@
+
+/* --- main css --- */
+* {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+main {
+   margin-left: 80px;
+}
+
+body {
+   border: 2px solid black;
+   margin: 0px;
+}
+
+/* --- nav --- */
+.nav {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #333333;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 60px;
+   opacity: 0.95;
+}
+ 
+.nav a {
+   padding: 8px 8px 8px 32px;
+   /* margin-left: 12px; */
+   text-decoration: none;
+   font-size: 25px;
+   color: white;
+   display: block;
+   transition: 0.3s;
+   /* text-align: center; */
+   /* border: 2px solid blue; */
+   /* background-color: #808080; */
+}
+ 
+.nav a:hover {
+   /* color: #f1f1f1; */
+   background-color: #808080;
+}
+ 
+.nav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 30px;
+   /* margin-left: 50px; */
+}
+
+.navbtn {
+   font-size: 30px;
+   cursor: pointer;
+   margin-left: 0.5%;
+   color: white;
+}
+
+.nav-span {
+   background-color: #333333;
+   padding: 10px;
+   position: fixed;
+   top: 0;
+   width: 50px;
+   height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+   .nav {padding-top: 15px;}
+   .nav a {font-size: 18px;}
+}
+
+/* --- header --- */
+.head {
+   border: 2px solid blue;
+   text-align: center;
+}
