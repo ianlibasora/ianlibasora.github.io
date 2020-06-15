@@ -1,18 +1,205 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css"/>
+   <title>Joseph Libasora</title>
 </head>
+<body id="top">
+   <section class="head">
 
-<body>
+      <h1>Joseph Libasora</h1>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+   </section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+   <div class="nav-span">
+      <span class="navbtn" onclick="openNav()">&#9776;</span>
+   </div>
+   <div class="light-dark"><!-- freepink asset -->
+      <img id="chBtn" onclick="chLight()" src="images/light.png" alt="Light mode icon" title="Dark mode" width="32" height="32">
+   </div>
 
+   <nav id="nav" class="nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#top" onclick="closeNav()">Home</a>
+      <a href="#about" onclick="closeNav()">About me</a>
+      <a href="#programming" onclick="closeNav()">Programming</a>
+      <a href="#projects" onclick="closeNav()">Projects</a>
+      <a href="#contact" onclick="closeNav()">Contact me</a>
+   </nav>
+
+   <main>
+      <section id="about">
+         <div class="content-container">
+            <h2>About me</h2>
+            <div class="content">
+               <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            </div>
+         </div>
+
+         <br>
+
+         <div class="content-container">
+            <h3>Interests</h3>
+            <div class="content">
+               <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            </div>
+         </div>
+      </section>
+
+      <br>
+
+      <section id="programming">
+         <div class="content-container">
+            <h2>Programming</h2>
+            <div class="content">
+               <p>langs</p>
+            </div>
+         </div>
+
+      </section>
+
+      <br>
+
+      <section id="projects">
+         <div class="content-container">
+            <h2>Projects</h2>
+            <div class="content">
+               <h3>Python</h3>
+               <div class="grid-container">
+                  <div class="grid-item">
+                     <div class="slide-container">
+                        <div class="slide1">
+                           <img src="images/chess_1.png" alt="Chess game start" width="550" height="300">
+                        </div>
+                        <div class="slide1">
+                           <img src="images/chess_2.png" alt="Checkmate" width="550" height="300">
+                        </div>
+                        <div class="slide1">
+                           <img src="images/chess_3.png" alt="Check" width="550" height="300">
+                        </div>
+                        <div class="slide1">
+                           <img src="images/chess_4.png" alt="Bishop move highlighting" width="550" height="300">
+                        </div>
+                        <div class="slide1">
+                           <img src="images/chess_5.png" alt="Pawn promotion" width="550" height="300">
+                        </div>
+
+                        <a class="prev" onclick="chSlide(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="chSlide(1, 0)">&#10095;</a>
+                     </div>
+
+                     <p>Chess Lorem Ipsum</p>
+                     <!-- incl github link -->
+
+
+
+                  </div>
+                  <div class="grid-item">
+                     <div class="slide-container">
+                        <div class="slide2">
+                           <img src="images/hangman_1.png" alt="Hangman start" width="550" height="300">
+                        </div>
+                        <div class="slide2">
+                           <img src="images/hangman_2.png" alt="Hangman midgame" width="550" height="300">
+                        </div>
+                        <div class="slide2">
+                           <img src="images/hangman_3.png" alt="Hangman win" width="550" height="300">
+                        </div>
+                        <div class="slide2">
+                           <img src="images/hangman_4.png" alt="Hangman loss" width="550" height="300">
+                        </div>
+
+                        <a class="prev" onclick="chSlide(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="chSlide(1, 1)">&#10095;</a>
+                     </div>
+
+                     <p>Hangman Lorem Ipsum</p>
+                     <!-- incl github link -->
+                  </div>
+               </div>
+
+               <!-- template -->
+               <!-- <h3>C++</h3>
+               <div class="grid-container">
+                  <div class="grid-item">3</div>
+                  <div class="grid-item">4</div>
+               </div> -->
+
+            </div>
+         </div>
+      </section>
+
+      <br>
+
+      <section id="contact">
+         <div id="form-container">
+            <h2>Contact me</h2>
+            <form action="https://formspree.io/xrgykaod" method="POST">
+               <label for="contact-name">Name</label>
+               <input id="contact-name" type="text" name="contact-name" placeholder="Full name"/>
+
+               <label for="contact-email">Email address</label>
+               <input id="contact-email" type="email" name="contact-email" placeholder="john.doe@example.com"/>
+
+               <label for="contact-message">Your message</label>
+               <textarea id="contact-message" name="contact-message" rows="5"></textarea>
+
+               <input type="submit" value="Send"/>
+            </form>
+
+         </div>
+
+         <br>
+
+         <div class="content-container">
+            <h3>Other socials</h3>
+
+            <div class="content">
+               <p>github</p>
+            </div>
+
+         </div>
+
+      </section>
+
+      <!-- incl in footer -->
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <a href="https://github.com/ianlibasora" title="Github">Github</a>
+
+   </main>
+
+   <br>
+   <!-- google asset -->
+   <button onclick="r_top()" id="topBtn" title="Return to top"><img src="images/up-chevron.png" title="Return to top" alt="Return to top" width="15" height="15"></button>
+
+   <footer>
+      <div class="foot-content">
+         <p>footer area</p>
+      </div>
+   </footer>
+
+   <!-- <a href="#top">Return to top</a> -->
+   <!-- remember CLOSE server -->
+
+   <!--
+   <p>side nav bar</p>
+   <p>js nav bar expand out</p> -->
+   <!-- <section id="tmp">
+   <h2>Things to include</h2>
+   <ul>
+      <li>Interests</li>
+      <li>projects</li>
+      <li>Links? linkedin</li>
+      <li>Contact me, ==> research how to do properly</li>
+   </ul>
+
+   </section>
+
+   <p>Images?</p> -->
+
+   <script src="script.js"></script>
 </body>
 </html>
