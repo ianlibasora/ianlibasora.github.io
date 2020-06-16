@@ -47,7 +47,8 @@ function chLight() {
 
 // Auto set light/dark w/ local time
 var time = new Date();
-if (7 < time < 7) {
+var hr = time.getHours();
+if (7 < hr && hr < 19) {
    document.getElementById("chBtn").src = "images/dark.png";
    document.body.style.backgroundColor = "white";
    document.body.style.color = "black";
