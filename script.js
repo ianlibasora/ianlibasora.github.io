@@ -10,9 +10,11 @@ function closeNav() {
 
 // Slides
 var slideIndex = [1, 1];
-var slideId = ["slide1", "slide2"]
+var slideId = ["slide0", "slide1"]
 showSlides(1, 0);
 showSlides(1, 1);
+// showSlides(1, 2);
+// showSlides(1, 3);
 
 function chSlide(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -36,14 +38,10 @@ function chLight() {
       document.getElementById("chBtn").src = "images/dark.png";
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
-      // document.form.style.color = "";
-      // document.form.style.backgroundColor = "";
    } else {
       document.getElementById("chBtn").src = "images/light.png";
       document.body.style.backgroundColor = "#333333";
       document.body.style.color = "white";
-      // document.form.style.color = "";
-      // document.form.style.backgroundColor = "";
    }
 }
 
@@ -53,14 +51,10 @@ if (7 < time < 7) {
    document.getElementById("chBtn").src = "images/dark.png";
    document.body.style.backgroundColor = "white";
    document.body.style.color = "black";
-   // document.form.style.color = "";
-   // document.form.style.backgroundColor = "";
 } else {
    document.getElementById("chBtn").src = "images/light.png";
    document.body.style.backgroundColor = "#333333";
    document.body.style.color = "white";
-   // document.form.style.color = "";
-   // document.form.style.backgroundColor = "";
 }
 
 // Return to top
