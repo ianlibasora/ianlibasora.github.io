@@ -196,7 +196,7 @@ a:hover, a:active {
 .social-grid-container {
    display: grid;
    grid-column-gap: 40px;
-   grid-template-columns: auto;/* --- adjust for more cols. --- */
+   grid-template-columns: auto auto;/* --- adjust for more cols. --- */
    padding: 5px 42% 5px 42%;
    background-color: #cccccc;
    margin: 10px 5% 10px 5%;
@@ -209,7 +209,7 @@ a:hover, a:active {
    border: 1px solid grey;
    border-radius: 4px;
    text-align: center;
-   padding: 5px 0px 5px 0px;
+   padding: 5px;
 }
 
 /* --- form --- */
