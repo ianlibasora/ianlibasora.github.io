@@ -98,7 +98,7 @@ a:hover, a:active {
 .content {
    border: 5px double black;
    border-radius: 10px;
-   text-align: justify;
+   text-align: center;
    margin: 0px 5% 0px 5%;
    padding: 10px;
    background-color: #cccccc;
