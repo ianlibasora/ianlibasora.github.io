@@ -9,11 +9,11 @@ function closeNav() {
 }
 
 // Slides
-var slideIndex = [1, 1];
-var slideId = ["slide0", "slide1"]
+var slideIndex = [1, 1, 1];
+var slideId = ["slide0", "slide1", "slide2"]
 showSlides(1, 0);
 showSlides(1, 1);
-// showSlides(1, 2);
+showSlides(1, 2);
 // showSlides(1, 3);
 
 function chSlide(n, no) {
