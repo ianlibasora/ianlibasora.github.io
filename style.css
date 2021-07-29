@@ -110,14 +110,14 @@ a:hover, a:active {
 }
 
 /* --- project grid --- */
-.grid-container {
+/* .grid-container {
    display: grid;
    grid-column-gap: 35px;
    grid-row-gap: 40px;
    grid-template-columns: auto auto;
    background-color: inherit;
    margin: 0px;
-}
+} */
 
 .grid-container-solo {
    display: grid;
@@ -134,6 +134,7 @@ a:hover, a:active {
    border-radius: 5px;
    padding: 5px;
    text-align: justify;
+   margin: 1%;
 }
 
 .grid-container-solo .grid-item {

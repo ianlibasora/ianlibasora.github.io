@@ -1,232 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css"/>
-   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
-   <title>Joseph Libasora</title>
-</head>
-<body id="top">
-   <section class="head">
-      <h1>Joseph Libasora</h1>
-   </section>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <div class="nav-span">
-      <span class="navbtn" onclick="openNav()">&#9776;</span>
-   </div>
-   <div class="light-dark"><!-- freepink asset -->
-      <img id="chBtn" onclick="chLight()" src="images/light.png" alt="Light mode icon" title="Dark mode" width="32" height="32">
-   </div>
+      <link rel="stylesheet" href="style.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-   <nav id="nav" class="nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#top" onclick="closeNav()">Home</a>
-      <a href="#about" onclick="closeNav()">About me</a>
-      <a href="#languages" onclick="closeNav()">Languages</a>
-      <a href="#projects" onclick="closeNav()">Projects</a>
-      <a href="#contact" onclick="closeNav()">Contact me</a>
-   </nav>
-
-   <main>
-      <section id="about">
-         <div class="content-container">
-            <h2>About me</h2>
-            <div class="content">
-               <p>I’m a 2nd year Computer Applications and Software Engineering student at Dublin City University. I have general overall interests in both computing and aviation.</p>
-            </div>
-         </div>
+      <title>Joseph Libasora</title>
+   </head>
+   <body id="top">
+      <section class="head">
+         <h1>Joseph Libasora</h1>
       </section>
 
-      <br>
+      <div class="nav-span">
+         <span class="navbtn" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="light-dark"><!-- freepink asset -->
+         <img id="chBtn" onclick="chLight()" src="images/light.png" alt="Light mode icon" title="Dark mode" width="32" height="32">
+      </div>
 
-      <section id="languages">
-         <div class="content-container">
-            <h2>Programming Languages/Technologies</h2>
-            <div class="content">
-               <p>HTML/CSS, Python, JavaScript, Bash, C++</p>
-               <p>My primary language is Python. I also have some experience with JavaScript and C++.</p>
-            </div>
-         </div>
-      </section>
+      <nav id="nav" class="nav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#top" onclick="closeNav()">Home</a>
+         <a href="#about" onclick="closeNav()">About me</a>
+         <a href="#languages" onclick="closeNav()">Languages</a>
+         <a href="#projects" onclick="closeNav()">Projects</a>
+         <a href="#contact" onclick="closeNav()">Contact me</a>
+      </nav>
 
-      <br>
-
-      <section id="projects">
-         <div class="content-container">
-            <h2>Notable Projects</h2>
-            <div class="content">
-               <h3>Python</h3>
-               <div class="grid-container">
-                  <div class="grid-item">
-                     <div class="slide-container">
-                        <div class="slide0">
-                           <img src="images/chess_1.png" alt="Chess game start" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_2.png" alt="Checkmate" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_3.png" alt="Check" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_4.png" alt="Bishop move highlighting" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_5.png" alt="Pawn promotion" width="550" height="300">
-                        </div>
-
-                        <a class="prev" onclick="chSlide(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="chSlide(1, 0)">&#10095;</a>
-                     </div>
-                     <p>Chess using Python's PyGame module. Features advanced chess gameplay and movement assist. <a href="https://github.com/ianlibasora/Chess-Game">Details</a></p>
-                     <p>Last updated: 10.Jun.2020, Python 3.8.3</p>
-                  </div>
-
-                  <div class="grid-item">
-                     <div class="slide-container">
-                        <div class="slide1">
-                           <img src="images/rtpi_1.png" alt="RTPI info DCU" width="550" height="300">
-                        </div>
-                        <div class="slide1">
-                           <img src="images/rtpi_2.png" alt="RTPI info college green" width="550" height="300">
-                        </div>
-
-                        <a class="prev" onclick="chSlide(-1, 1)">&#10094;</a>
-                        <a class="next" onclick="chSlide(1, 1)">&#10095;</a>
-                     </div>
-                     <p>Dublin public transport RTPI library and script in Python. Runs within the terminal, Linux and Windows compatible. <a href="https://github.com/ianlibasora/Dublin-RTPI">Details</a></p>
-                     <p>Last updated: 12.Jul.2020, Python 3.8.2</p>
-                  </div>
+      <main>
+         <br>
+         <section id="about">
+            <div class="content-container">
+               <h2>About me</h2>
+               <div class="content">
+                  <p>I’m a 3rd year Computer Applications and Software Engineering student at Dublin City University. I have general overall interests in both computing and aviation.</p>
                </div>
-               
-               <!-- solo grid template -->
-               <!-- <br>
-
-               <div class="grid-container-solo">
-                  <div class="grid-item">
-                     <div class="slide-container">
-                        <div class="slide0">
-                           <img src="images/chess_1.png" alt="Chess game start" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_2.png" alt="Checkmate" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_3.png" alt="Check" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_4.png" alt="Bishop move highlighting" width="550" height="300">
-                        </div>
-                        <div class="slide0">
-                           <img src="images/chess_5.png" alt="Pawn promotion" width="550" height="300">
-                        </div>
-
-                        <a class="prev" onclick="chSlide(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="chSlide(1, 0)">&#10095;</a>
-                     </div>
-                     <p>Chess using Python's PyGame module. Features advanced chess gameplay and movement assist. <a href="https://github.com/ianlibasora/Chess-Game">Details</a></p>
-                     <p>Last updated: 10.Jun.2020, Python 3.8.3</p>
-                  </div>
-               </div> -->
-               <!-- end template -->
-
-               <!-- template -->
-               <!-- <h3>C++</h3>
-               <div class="grid-container">
-                  <div class="grid-item">
-                     <div class="slide-container">
-                        <div class="slide2">
-                           <img src="images/chess_1.png" alt="" width="550" height="300">
-                        </div>
-                        <div class="slide2">
-                           <img src="images/chess_1.png" alt="" width="550" height="300">
-                        </div>
-
-                        <a class="prev" onclick="chSlide(-1, 2)">&#10094;</a>
-                        <a class="next" onclick="chSlide(1, 2)">&#10095;</a>
-                     </div>
-
-                     <p>Lorem ipsum incl github</p>
-                  </div>
-
-                  <div class="grid-item">
-                     <div class="slide-container">
-                        <div class="slide3">
-                           <img src="images/chess_1.png" alt="" width="550" height="300">
-                        </div>
-
-                        <div class="slide3">
-                           <img src="images/chess_1.png" alt="" width="550" height="300">
-                        </div>
-
-                        <a class="prev" onclick="chSlide(-1, 3)">&#10094;</a>
-                        <a class="next" onclick="chSlide(1, 3)">&#10095;</a>
-                     </div>
-
-                     <p>Lorem ipsum incl github</p>
-                  </div>
-               </div> -->
-               <!-- end template -->
-
             </div>
-         </div>
-      </section>
-
-      <br>
-
-      <section id="contact">
-         <div id="form-container">
-            <h2>Contact me</h2>
-            <form action="https://formspree.io/xrgykaod" method="POST">
-               <label for="contact-name">Name</label>
-               <input id="contact-name" type="text" name="contact-name" placeholder="Full name"/>
-
-               <label for="contact-email">Email address</label>
-               <input id="contact-email" type="email" name="contact-email" placeholder="john.doe@example.com"/>
-
-               <label for="contact-message">Your message</label>
-               <textarea id="contact-message" name="contact-message" rows="5"></textarea>
-
-               <input type="submit" value="Send"/>
-            </form>
-         </div>
+         </section>
 
          <br>
 
-         <div class="content-container">
-            <h4>Follow me</h4>
-            <div class="social-grid-container">
-               <div class="social-grid-item"><!-- github asset -->
-                  <a href="https://github.com/ianlibasora"><img src="images/GitHub-Mark-32px.png" alt="Github link" width="32" height="32"></a>
+         <section id="languages">
+            <div class="content-container">
+               <h2>Programming Languages/Technologies</h2>
+               <div class="content">
+                  <p>Python, Java, C, HTML/CSS, JavaScript, ShellScript, MySQL, R, Prolog, ReactJS, Django, discordpy, pygame</p>
                </div>
-
-               <div class="social-grid-item"><!-- linkedin asset -->
-                  <a href="https://www.linkedin.com/in/josephlibasora/"><img src="images/linkedin_bug.png" alt="Linkedin link" width="32" height="32"></a>
-               </div>
-
-               <!-- template -->
-               <!-- <div class="social-grid-item">
-                  <a href="">img src=""" alt="" width="32" height="32"></a>
-               </div> -->
-               <!-- end template -->
             </div>
+         </section>
+
+         <br>
+
+         <section id="projects">
+            <div class="content-container">
+               <h2>Notable Projects</h2>
+               <div class="content">
+                  <h3>Python</h3>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col grid-item">
+                           <div class="slide-container">
+                              <div class="slide0">
+                                 <img src="images/chess_1.png" alt="Chess game start" width="550" height="300">
+                              </div>
+                              <div class="slide0">
+                                 <img src="images/chess_2.png" alt="Checkmate" width="550" height="300">
+                              </div>
+                              <div class="slide0">
+                                 <img src="images/chess_3.png" alt="Check" width="550" height="300">
+                              </div>
+                              <div class="slide0">
+                                 <img src="images/chess_4.png" alt="Bishop move highlighting" width="550" height="300">
+                              </div>
+                              <div class="slide0">
+                                 <img src="images/chess_5.png" alt="Pawn promotion" width="550" height="300">
+                              </div>
+                              
+                              <a class="prev" onclick="chSlide(-1, 0)">&#10094;</a>
+                              <a class="next" onclick="chSlide(1, 0)">&#10095;</a>
+                           </div>
+                           <p>Chess using Python's PyGame module. Features advanced chess gameplay and movement assist. <a href="https://github.com/ianlibasora/Chess-Game">Details</a></p>
+                           <p>Last updated: 10.Jun.2020, Python 3.8.3</p>
+                        </div>
+                        
+                        <div class="col grid-item">
+                           <div class="slide-container">
+                              <div class="slide1">
+                                 <img src="images/homebot-1.png" alt="HomeBot help page" width="550" height="300">
+                              </div>
+                              <div class="slide1">
+                                 <img src="images/homebot-2.png" alt="HomeBot F1 World Constructors Championship Standings" width="550" height="300">
+                              </div>
+                              <div class="slide1">
+                                 <img src="images/homebot-3.png" alt="HomeBot airport METAR/TAF request" width="550" height="300">
+                              </div>
+                              
+                              <a class="prev" onclick="chSlide(-1, 1)">&#10094;</a>
+                              <a class="next" onclick="chSlide(1, 1)">&#10095;</a>
+                           </div>
+                           <p>Home utility bot in discord using Python. <a href="https://github.com/ianlibasora/Dublin-RTPI">Details</a></p>
+                           <p>Last updated: 29.Jul.2021, Python 3.8.10</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- solo grid template -->
+                  <!-- <br>
+
+                  <div class="grid-container-solo">
+                     <div class="grid-item">
+                        <div class="slide-container">
+                           <div class="slide0">
+                              <img src="images/chess_1.png" alt="Chess game start" width="550" height="300">
+                           </div>
+                           <div class="slide0">
+                              <img src="images/chess_2.png" alt="Checkmate" width="550" height="300">
+                           </div>
+                           <div class="slide0">
+                              <img src="images/chess_3.png" alt="Check" width="550" height="300">
+                           </div>
+                           <div class="slide0">
+                              <img src="images/chess_4.png" alt="Bishop move highlighting" width="550" height="300">
+                           </div>
+                           <div class="slide0">
+                              <img src="images/chess_5.png" alt="Pawn promotion" width="550" height="300">
+                           </div>
+
+                           <a class="prev" onclick="chSlide(-1, 0)">&#10094;</a>
+                           <a class="next" onclick="chSlide(1, 0)">&#10095;</a>
+                        </div>
+                        <p>Chess using Python's PyGame module. Features advanced chess gameplay and movement assist. <a href="https://github.com/ianlibasora/Chess-Game">Details</a></p>
+                        <p>Last updated: 10.Jun.2020, Python 3.8.3</p>
+                     </div>
+                  </div> -->
+                  <!-- end template -->
+
+                  <!-- template -->
+                  <!-- <h3>C++</h3>
+                  <div class="grid-container">
+                     <div class="grid-item">
+                        <div class="slide-container">
+                           <div class="slide2">
+                              <img src="images/chess_1.png" alt="" width="550" height="300">
+                           </div>
+                           <div class="slide2">
+                              <img src="images/chess_1.png" alt="" width="550" height="300">
+                           </div>
+
+                           <a class="prev" onclick="chSlide(-1, 2)">&#10094;</a>
+                           <a class="next" onclick="chSlide(1, 2)">&#10095;</a>
+                        </div>
+
+                        <p>Lorem ipsum incl github</p>
+                     </div>
+
+                     <div class="grid-item">
+                        <div class="slide-container">
+                           <div class="slide3">
+                              <img src="images/chess_1.png" alt="" width="550" height="300">
+                           </div>
+
+                           <div class="slide3">
+                              <img src="images/chess_1.png" alt="" width="550" height="300">
+                           </div>
+
+                           <a class="prev" onclick="chSlide(-1, 3)">&#10094;</a>
+                           <a class="next" onclick="chSlide(1, 3)">&#10095;</a>
+                        </div>
+
+                        <p>Lorem ipsum incl github</p>
+                     </div>
+                  </div> -->
+                  <!-- end template -->
+
+               </div>
+            </div>
+         </section>
+
+         <br>
+
+         <section id="contact">
+            <div id="form-container">
+               <h2>Contact me</h2>
+               <form action="https://formspree.io/xrgykaod" method="POST">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" type="text" name="contact-name" placeholder="Full name"/>
+
+                  <label for="contact-email">Email address</label>
+                  <input id="contact-email" type="email" name="contact-email" placeholder="john.doe@example.com"/>
+
+                  <label for="contact-message">Your message</label>
+                  <textarea id="contact-message" name="contact-message" rows="5"></textarea>
+
+                  <input type="submit" value="Send"/>
+               </form>
+            </div>
+
+            <br>
+
+            <div class="content-container">
+               <h4>Follow me</h4>
+               <div class="social-grid-container">
+                  <div class="social-grid-item"><!-- github asset -->
+                     <a href="https://github.com/ianlibasora"><img src="images/GitHub-Mark-32px.png" alt="Github link" width="32" height="32"></a>
+                  </div>
+
+                  <div class="social-grid-item"><!-- linkedin asset -->
+                     <a href="https://www.linkedin.com/in/josephlibasora/"><img src="images/linkedin_bug.png" alt="Linkedin link" width="32" height="32"></a>
+                  </div>
+
+                  <!-- template -->
+                  <!-- <div class="social-grid-item">
+                     <a href="">img src=""" alt="" width="32" height="32"></a>
+                  </div> -->
+                  <!-- end template -->
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <br>
+      <!-- google asset -->
+      <button onclick="r_top()" id="topBtn" title="Return to top"><img src="images/up-chevron.png" title="Return to top" alt="Return to top" width="15" height="15"></button>
+
+      <footer>
+         <div class="foot-content">
+            <span>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Light/Dark buttons">Freepik</a>, <a href="https://www.flaticon.com/authors/google" title="Up chevron">Google</a>, <a href="https://www.flaticon.com/" title="Flaticon">flaticon.com.</a></span>
+            <span>Github mark by <a href="https://github.com/" title="Github mark">Github, </a><a href="https://github.com/logos" title="Github logos">Github.com.</a></span>
+            <span>Linkedin bug by <a href="https://brand.linkedin.com/policies">LinkedIn. </a></span>
+            <span><a href="https://github.com/ianlibasora/ianlibasora.github.io/blob/master/README.md" title="Attribution details">Attribution details.</a></span>
          </div>
-      </section>
-   </main>
-
-   <br>
-   <!-- google asset -->
-   <button onclick="r_top()" id="topBtn" title="Return to top"><img src="images/up-chevron.png" title="Return to top" alt="Return to top" width="15" height="15"></button>
-
-   <footer>
-      <div class="foot-content">
-         <span>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Light/Dark buttons">Freepik</a>, <a href="https://www.flaticon.com/authors/google" title="Up chevron">Google</a>, <a href="https://www.flaticon.com/" title="Flaticon">flaticon.com.</a></span>
-         <span>Github mark by <a href="https://github.com/" title="Github mark">Github, </a><a href="https://github.com/logos" title="Github logos">Github.com.</a></span>
-         <span>Linkedin bug by <a href="https://brand.linkedin.com/policies">LinkedIn. </a></span>
-         <span><a href="https://github.com/ianlibasora/ianlibasora.github.io/blob/master/README.md" title="Attribution details">Attribution details.</a></span>
-      </div>
-   </footer>
-   <script src="script.js"></script>
-</body>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+   </body>
 </html>
