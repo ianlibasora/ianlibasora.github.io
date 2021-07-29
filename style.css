@@ -63,6 +63,10 @@ a:hover, a:active {
    font-size: 30px;
 }
 
+.nav ul {
+   list-style-type: none;
+}
+
 .navbtn {
    font-size: 30px;
    cursor: pointer;
